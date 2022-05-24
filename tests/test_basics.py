@@ -7,4 +7,6 @@ def test_area_rect():
 
 
 def test_area_circle():
-  assert "{:.2f}".format(area.area_circle(4)) == 12.56
+  circle_area = "{:.2f}".format(area.area_circle(4))
+  assert float(circle_area) == pytest.approx(50.27)
+  # assert circle_area == '50.27'
